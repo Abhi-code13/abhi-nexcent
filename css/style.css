@@ -14,6 +14,7 @@ body{
 }
 header{
     background-color: #F5F7FA;
+    padding: 30px 0;
 }
 .row{
     display: flex;
@@ -22,11 +23,12 @@ header{
 header>div>div.row{
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    
 }
 .nav-logo img{
-    width: 154px;
-    height: 24px;
+    max-width: 154px;
+    width: 100%;
+    object-fit: contain;
 }
 ul li{
     text-decoration: none;
@@ -142,11 +144,9 @@ nav a{
 }
 .logo{
     max-width: 48px;
-    min-height: 48px;
 }
 .logo img{
     width: 100%;
-    height: fit-content;
     object-fit: contain;
 }
 .community-section{
@@ -228,6 +228,9 @@ nav a{
     justify-content: space-between;
     align-items: center;
 }
+.help{
+    max-width: 540px;
+}
 .child-helping p{
     color: #18191F;
     font-weight: 400;
@@ -235,14 +238,15 @@ nav a{
     line-height: 24px;
     margin-top: 8px;
 }
-.child-helping>div.row{
+.help>div.row{
     gap: 30px;
 }
 .inner-child-helping{
     max-width: 255px;
+    flex-basis: 50%;
 }
 .inner-child-helping>div.row{
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 16px;
 }
@@ -403,7 +407,7 @@ nav a{
     font-weight: 700;
     font-size: 64px;
 }
-.footer{
+footer{
     background-color: #263238;
     padding: 64px 0;
 }
@@ -411,7 +415,7 @@ nav a{
 .inner-footer ul li {
     display: block;
 }
-.footer>div>div.row{
+footer>div>div.row{
     justify-content: space-between;
 }
 .child-footer>div.row{
@@ -448,6 +452,39 @@ nav a{
     line-height: 20px;
     color: #FFFFFF;
 }
+.register{
+    background-color: #727577;
+    border-radius: 8px;
+    padding: 12px;
+    max-width: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+input[type="text"]{
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.register input{
+    background-color: transparent;
+    color: #FFFFFF;
+}
+.register input::placeholder{
+    color: #DADBDB;
+}
+.register label{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+}
+.register img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 @media screen and (max-width: 1096px) {
     .hamburger{
         display: block;
@@ -469,6 +506,17 @@ nav a{
          margin-top: 20px;
          gap : 20px;
      }
+     .banner-section{
+        position: relative;
+        z-index: -1;
+     }
+     header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+     }
 }
 @media screen and (max-width: 1132px){
     .banner-section>div>div.row{
@@ -487,8 +535,17 @@ nav a{
         padding: 10px 25px;
         font-size: 12px;
     }
-    .main-section{
-        padding: 30px 0;
+    .banner-section{
+        padding: 60px 0;
+    }
+    header{
+        padding: 15px 0;
+    }
+    nav>ul{
+        gap: 30px;
+    }
+    .nav-btn {
+        gap : 25px;
     }
 
 }
@@ -523,14 +580,25 @@ nav a{
         font-size: 18px;
         line-height: 25px;
     }
+    .child-helping>div.row{
+        flex-direction: column;
+        gap: 15px;
+
+    }
+    .cmn-hlp-txt{
+        font-size: 15px;
+    }
+    .cmn-hlp-spn{
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 425px){
     .common-head{
         font-size: 25px;
         line-height: 30px;
     }
-    p{
-        font-size: 10px;
+    p, .first-para{
+        font-size: 12px;
         line-height: 15px;
     }
     .cmn-btn{
@@ -542,6 +610,25 @@ nav a{
     .child-design-2 p{
         font-size: 10px;
         line-height: 15px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .tesla>div>div.row{
+        gap: 20px;
+    }
+    .design>div>div.row{
+        gap: 25px;
+    }
+}
+@media screen and (max-width: 320px){
+     .pixelgrade , .helping , .design {
+        padding: 25px 0;
+    }
+    nav>ul{
+        gap: 20px;
+    }
+    .nav-btn {
+        gap : 15px;
     }
 }
 @media screen and (max-width: 1182px){
@@ -562,5 +649,18 @@ nav a{
 @media screen and (max-width: 768px){
     .main-demo h2{
         font-size: 32px;
+    }
+}
+@media screen and (max-width: 1024px){
+    footer>div>div.row{
+        flex-direction: column;
+        align-items: center;
+        gap : 50px
+    }
+}
+@media screen and (max-width: 575px){
+    .child-footer>div.row{
+        justify-content: space-evenly;
+        gap: 30px;
     }
 }
