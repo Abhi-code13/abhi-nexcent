@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1182px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+header{
+    background-color: #F5F7FA;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+header>div>div.row{
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.nav-logo img{
+    width: 154px;
+    height: 24px;
+}
+ul li{
+    text-decoration: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+span{
+    display: inline-block;
+}
+nav>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.nav-btn {
+    display:flex;
+    align-items: center;
+    gap : 35px;
+}
+nav a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #18191F;
+}
+.btn{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.btn1{
+    color: #4CAF4F;
+}
+.btn2{
+    padding: 10px 20px;
+    background-color: #4CAF4F;
+    border-radius: 6px;
+    color: #fff;
+}
+.hamburger i{
+    display: inline-block;
+}
+.hamburger{
+    display: none;
+}
+.banner-section{
+    background-color:#F5F7FA ;
+    padding: 96px 0;
+}
+.banner-section>div>div.row{
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+}
+.content h1{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76px;
+    color: #4D4D4D;
+}
+.banner-head{
+    display: inline-block;
+    color: #4CAF4F;
+}
+.content p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 16px;
+}
+.cmn-btn{
+    padding: 14px 32px;
+    background-color: #4CAF4F;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 32px;
+}
+.banner-image{
+    max-width : 391px;
+}
+.banner-image img{
+    width: 100%;
+    object-fit: contain;
+}
+.common-head{
+    font-weight: 600;
+    font-size: 36px;
+    color: #4D4D4D;
+    line-height: 44px;
+}
+.clients-section{
+    text-align: center;
+    padding: 40px 0;
+}
+.clients-section p{
+    color: #717171;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 8px;
+}
+.clients-section>div>div.row{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.logo{
+    max-width: 48px;
+    min-height: 48px;
+}
+.logo img{
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
+}
+.community-section{
+    padding: 40px 0;
+    text-align: center;
+}
+.community-section>div>div.row{
+    justify-content: space-between;
+    align-items: center;
+}
+.child-cards{
+    max-width: 299px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190,209, 0.2);
+    padding: 24px 16px;
+}
+.child-cards img{
+    width: 65px;
+    height: 56px;
+    object-fit: contain;
+}
+.child-cards h3{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #4D4D4D;
+    max-width: 147px;
+    margin: 16px 0 8px 0;
+}
+.child-cards p{
+    color: #717171;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 251px;
+}
+.community-section>div>p{
+    color: #717171;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px 0 16px 0;
+}
+.pixelgrade{
+    padding-bottom: 48px;
+}
+.pixelgrade>div>div.row{
+    justify-content: center;
+    align-items: center;
+    gap: 49px;
+}
+.child-pixelgrade-1 img{
+    width: 100%;
+    max-width: 442px;
+    height: auto;
+}
+.child-pixelgrade-2{
+    max-width: 661px;
+}
+.child-pixelgrade-2 h2{
+    max-width: 532px;
+}
+.child-pixelgrade-2 p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 601px;
+    color: #717171;
+    margin-top: 16px;
+}
+.helping{
+    padding: 64px 0;
+    background-color: #F5F7FA;
+}
+.helping>div>div.row{
+    justify-content: space-between;
+    align-items: center;
+}
+.child-helping p{
+    color: #18191F;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+}
+.child-helping>div.row{
+    gap: 30px;
+}
+.inner-child-helping{
+    max-width: 255px;
+}
+.inner-child-helping>div.row{
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.help-img{
+    max-width: 48px;
+}
+.help-img img{
+    width: 100%;
+    object-fit: contain;
+}
+.cmn-help-txt{
+    color: #4D4D4D;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 36px;
+}
+.cmn-hlp-spn{
+    color: #717171;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.design{
+    padding: 48px 0;
+}
+.design>div>div.row{
+    justify-content: center;
+    align-items: center;
+    gap: 49px;
+}
+.child-design-1{
+    max-width: 441px;
+}
+.child-design-1 img{
+    width: 100%;
+    object-fit: contain;
+}
+.child-design-2{
+    max-width: 661px;
+}
+.child-design-2 h2{
+    max-width: 601px;
+}
+.child-design-2 p{
+    color: #717171;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 16px;
+}
+.tesla{
+    padding: 32px 0;
+    background-color: #F5F7FA;
+}
+.tesla>div>div.row{
+    justify-content: center;
+    align-items: center;
+    gap: 78px;
+}
+.child-tesla-div-1{
+    max-width: 326px;
+}
+.child-tesla-div-1 img{
+    width: 100%;
+    height: auto;
+}
+.child-tesla-div-2{
+    max-width: 748px;
+}
+.child-tesla-div-2>div.row{
+    align-items: center;
+    justify-content: start;
+    gap: 41px;
+    margin-top: 32px;
+}
+.tesla-text{
+    color: #4CAF4F;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+.first-para{
+    color: #717171;
+    max-width: 748px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 16px;
+}
+.second-para{
+    color: #89939E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.marketing{
+    padding: 48px 0 96px 0;
+    text-align: center;
+}
+.marketing p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #717171;
+    max-width: 628px;
+    margin: 0  auto;
+}
+.marketing>div>div.row{
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 16px;
+}
+.child-marketing{
+    max-width: 368px;
+    position: relative;
+}
+.child-marketing>img{
+    width: 100%;
+    object-fit: contain;
+}
+.inner-market{
+    max-width: 317px;
+    height: 176px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(171,190,209,0.4);
+    position: absolute;
+    bottom: -60px;
+    left: 25px;
+    right: 25px;
+    background-color: #F5F7FA;
+    text-align: center;
+    padding: 16px;
+}
+.cmn-subhead{
+    color: #717171;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 285px;
+}
+.inner-market .tesla-text{
+    justify-content: center;
+    padding-top: 24px;
+}
+.demo{
+    background-color: #F5F7FA;
+}
+.main-demo{
+    text-align: center;
+    padding: 32px 0;
+}
+.main-demo h2{
+    color: #263238;
+    font-weight: 700;
+    font-size: 64px;
+}
+.footer{
+    background-color: #263238;
+    padding: 64px 0;
+}
+
+.inner-footer ul li {
+    display: block;
+}
+.footer>div>div.row{
+    justify-content: space-between;
+}
+.child-footer>div.row{
+    justify-content: space-between;
+}
+.foot{
+    max-width: 635px;
+    width: 100%;
+}
+.child-footer>img{
+    max-width: 191px;
+    width: 100%;
+    object-fit: contain;
+}
+.child-footer p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    max-width: 210px;
+    margin: 40px 0;
+}
+.common-foot-head{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.inner-footer ul li a{
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+@media screen and (max-width: 1096px) {
+    .hamburger{
+        display: block;
+    }
+    nav , 
+    .nav-btn{
+        display: none;
+        flex-basis: 100%;
+     }
+     #hamburger:checked ~ nav{
+        display: block;   
+     } 
+     nav>ul , .nav-btn{
+        flex-direction: column;
+     }
+     #hamburger:checked ~ .nav-btn{
+         display: flex;
+         justify-content: center;
+         margin-top: 20px;
+         gap : 20px;
+     }
+}
+@media screen and (max-width: 1132px){
+    .banner-section>div>div.row{
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 768px){
+    .content h1{
+        font-size: 45px;
+        line-height: 40px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .content .cmn-btn{
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+    .main-section{
+        padding: 30px 0;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .clients-section h2{
+        font-size: 30px;
+    }
+    .clients-section p{
+        font-size: 12px;
+    }
+    .clients-section>div>div.row {
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 925px){
+    .community-section>div>div.row{
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 425px){
+    .community-section h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .community-section p{
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .child-cards h3{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width: 425px){
+    .common-head{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .cmn-btn{
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 425px){
+    .child-design-2 p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+@media screen and (max-width: 1182px){
+    .marketing>div>div.row{
+        flex-direction: column;
+        gap: 90px;
+    }
+}
+@media screen and (max-width: 425px){
+    .inner-market h3{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .inner-market a{
+        font-size: 14px;
+    }  
+}
+@media screen and (max-width: 768px){
+    .main-demo h2{
+        font-size: 32px;
+    }
+}
