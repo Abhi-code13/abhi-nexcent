@@ -113,6 +113,17 @@ nav a{
     line-height: 24px;
     margin-top: 32px;
 }
+.banner-section{
+    position: relative;
+    z-index: -1;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
 .banner-image{
     max-width : 391px;
 }
@@ -495,7 +506,7 @@ input[type="text"]{
         flex-basis: 100%;
      }
      #hamburger:checked ~ nav{
-        display: block;   
+        display: block;  
      } 
      nav>ul , .nav-btn{
         flex-direction: column;
@@ -506,17 +517,7 @@ input[type="text"]{
          margin-top: 20px;
          gap : 20px;
      }
-     .banner-section{
-        position: relative;
-        z-index: -1;
-     }
-     header{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-     }
+     
 }
 @media screen and (max-width: 1132px){
     .banner-section>div>div.row{
@@ -628,7 +629,7 @@ input[type="text"]{
         gap: 20px;
     }
     .nav-btn {
-        gap : 15px;
+        gap : 1 5px;
     }
 }
 @media screen and (max-width: 1182px){
